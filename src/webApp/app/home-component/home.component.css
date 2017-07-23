@@ -1,0 +1,107 @@
+.cover {
+    position:relative;
+    height: 75vh;
+    padding: 2vh;
+}
+.cover>img {
+    position:absolute;
+    width: 98%;
+    height:73vh;
+    opacity:0.6;
+}
+.cover>.read {
+    position: absolute;
+    top: 49vh;
+    left: 6%;
+    color: white;
+}
+
+.cover>.read>h3 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.intro {
+    height: 60vh;
+    padding-right:1%;
+    padding-left:1%;
+}
+
+.calender{
+    float:left;
+    width:22%;
+    height:90%;
+    padding:1%;
+}
+
+.calender>h3{
+    color:#C0B283;
+    text-align: center;
+}
+.brief {
+    float:right;
+    width:71%;
+    height:90%;
+    padding:1%;
+}
+
+.brief-question {
+    color:#C0B283;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.brief-ans {
+    margin-top:10px;
+    color:#C0B283;
+    text-align: center;
+}
+
+/*.brief-image-holder>#img1 {
+    background: url('../assets/images/brief-bg-1.JPG');
+    background-size: contain;
+}
+
+.brief-image-holder>#img2 {
+    background: url('../assets/images/brief-bg-2.JPG');
+    background-size: contain;
+}*/
+
+.mission-vision-history {
+    padding-right:1%;
+    padding-left: 1%;
+    margin-top:1%;
+    margin-bottom: 1%;
+}
+
+.mission-vision-history>div {
+    display:inline-block;
+    width:27%;
+    padding: 1% 3%;
+}
+
+.mission-vision-history>div>h1 {
+    text-align: center;
+    color:teal;
+}
+
+.testimonials {
+    padding-right:1%;
+    padding-left: 1%;
+    margin-top:1%;
+    margin-bottom: 1%;
+    height:50vh;
+}
+
+.testimonials>h1 {
+    color:teal;
+}
+
+.view-more {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.view-more {
+    color: teal;
+}

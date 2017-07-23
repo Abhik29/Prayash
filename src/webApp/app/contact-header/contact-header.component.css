@@ -1,0 +1,108 @@
+.header {
+    display: block;
+    border-bottom: 1px solid black
+}
+
+.contact-header {
+    height:30px;
+    background-color: #373737;
+    opacity: 0.8;
+    padding: 5px 50px;
+}
+
+i {
+    color:#E37222;
+}
+
+.contact-social, .contact-personal {
+    color:#dcd0c0;
+    padding:9px 0px;
+}
+
+.contact-social {
+    float: left;
+}
+.contact-social>span {
+    font-size:11px;
+}
+
+.contact-personal {
+    float: right;
+}
+
+.contact-personal>span {
+    font-size:11px;
+}
+
+.header-bar {
+    display: table;
+    background-color: #f4f4f4;
+    height: 50px;
+    padding: 15px 0px;
+    width:100%
+}
+
+.header-bar>div {
+    display:table-cell;
+    vertical-align: middle;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.title {
+    float:left;
+    font-style: italic;
+    color: teal;
+}
+
+.menu {
+    float: right;
+    display: block;
+    margin-top: 20px;
+}
+
+.menu>ul {
+    list-style-type: none;
+}
+
+.menu>ul>li {
+    display: inline
+}
+
+.menu>ul>li>a {
+    text-decoration: none;
+    padding: 20px 20px;
+    color:#C0B283;
+}
+
+.menu>ul>li>a:hover {
+    /*background-color:teal;*/
+    /*opacity:0.5;*/
+    color:#E37222;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    cursor: pointer;
+}
+
+.menu>ul>li>a:active {
+    border-bottom: 1px solid #E37222;
+    color:#C0B283;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;
+        color:#C0B283}
+}  
+@keyframes fadeIn {
+    0% {opacity:0;
+        color:#C0B283}
+}
+
+.menu>ul>li>.active {
+    color:#E37222;
+    border-bottom: 1px solid #E37222;
+}
+
+.router-outlet {
+    
+}
