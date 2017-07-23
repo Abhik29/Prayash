@@ -165,7 +165,7 @@ body {
     position: fixed;
     top: 45%;
     left:45%;
-    background-image: url('./images/underContruction.JPG');
+    background-image: url('./images/underContruction.jpg');
     width: 20%;
     height: 30%;
     -webkit-animation: rotation 1s linear 2s;
