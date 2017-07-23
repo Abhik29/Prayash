@@ -52,7 +52,10 @@ i {
 .title {
     float:left;
     font-style: italic;
-    color: teal;
+}
+.title>a {
+    text-decoration: none;
+    color:teal;
 }
 
 .menu {
@@ -71,7 +74,7 @@ i {
 
 .menu>ul>li>a {
     text-decoration: none;
-    padding: 20px 20px;
+    padding: 21px 21px;
     color:#C0B283;
 }
 
