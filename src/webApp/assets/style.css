@@ -75,6 +75,7 @@ body {
     background-size: cover;
     margin-left: 3%;
     cursor: pointer;
+    box-shadow: 5px 5px 11px 0 grey;
 }
 .brief-image-holder>#br-img1 {
     background-image: url('./images/brief-bg-1.JPG');
@@ -89,7 +90,7 @@ body {
 }
 
 .testimonial-images>div {
-    width: 15%;
+    width: 18%;
     height: 35vh;
     border: 10px solid tan;
     display: inline-block;
@@ -97,6 +98,7 @@ body {
     margin-top: 1%;
     margin-left: 3%;
     cursor: pointer;
+    box-shadow: 5px 5px 11px 0 grey;
 }
 .testimonial-images>div:hover {
     opacity:1;
@@ -110,17 +112,87 @@ body {
     0% {opacity:0.5}
 }
 .testimonial-images>#test-img1 {
-    background-image: url('./images/brief-bg-1.JPG');
+    background-image: url('./images/test-img-1.JPG');
 }
 
 .testimonial-images>#test-img2 {
-    background-image: url('./images/brief-bg-2.JPG');
+    background-image: url('./images/test-img-2.tif');
 }
 
 .testimonial-images>#test-img3 {
-    background-image: url('./images/brief-bg-3.JPG');
+    background-image: url('./images/test-img-3.tif');
 }
 
 .testimonial-images>#test-img4 {
-    background-image: url('./images/brief-bg-3.JPG');
+    background-image: url('./images/test-img-3.tif');
+}
+
+.gallery-images>div {
+    width: 18%;
+    height: 35vh;
+    border: 10px solid tan;
+    display: inline-block;
+    background-size: cover;
+    margin-top: 1%;
+    margin-left: 3%;
+    cursor: pointer;
+    box-shadow: 5px 5px 11px 0 grey;
+}
+.gallery-images>div:hover {
+    opacity:1;
+    -webkit-animation: fadeIn 0.5s;
+    animation: halfFadeIn 0.5s;
+}
+.gallery-images>#gallery-img1 {
+    background-image: url('./images/brief-bg-1.JPG');
+}
+.gallery-images>#gallery-img2 {
+    background-image: url('./images/brief-bg-1.JPG');
+}
+
+.gallery-images>#gallery-img3 {
+    background-image: url('./images/brief-bg-1.JPG');
+}
+
+.gallery-images>#gallery-img4 {
+    background-image: url('./images/brief-bg-1.JPG');
+}
+
+.underConstruction {
+    position: fixed;
+    top: 45%;
+    left:45%;
+    background-image: url('./images/underContruction.JPG');
+    width: 20%;
+    height: 30%;
+    -webkit-animation: rotation 1s linear 2s;
+    animation: rotation 1s linear 2s;
+}
+@keyframes rotation {
+    from {
+				-webkit-transform: rotateY(0deg);
+		}
+		to {
+				-webkit-transform: rotateY(360deg);
+		}
+}
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotateY(0deg);
+		}
+		to {
+				-webkit-transform: rotateY(360deg);
+		}
+}
+
+.event{
+
+}
+
+.event-date{
+
+}
+
+.event-description {
+    
 }

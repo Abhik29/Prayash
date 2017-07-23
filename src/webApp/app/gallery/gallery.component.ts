@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector:'gallery',
-    template:`<h1>Gallery</h1>`
+    template:`<div class="underConstruction"></div>`
 })
 export class GalleryComponent{
 }

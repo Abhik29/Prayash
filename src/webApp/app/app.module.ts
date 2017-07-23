@@ -13,6 +13,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { FooterComponent } from './footer/footer.component';
 
 //include later
 //import { NavigationComponent } from './navigation/navigation.component'
@@ -25,7 +26,8 @@ import { GalleryComponent } from './gallery/gallery.component';
                   TestimonialsComponent, 
                   ContactUsComponent,
                   AboutUsComponent,
-                  GalleryComponent  ],
+                  GalleryComponent,
+                  FooterComponent  ],
   providers:    [ ],
   bootstrap:    [ AppComponent ]
 })

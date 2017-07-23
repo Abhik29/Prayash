@@ -29,7 +29,7 @@
 
 .calender{
     float:left;
-    width:22%;
+    width:25%;
     height:90%;
     padding:1%;
 }
@@ -38,6 +38,47 @@
     color:#C0B283;
     text-align: center;
 }
+
+.event{
+    width: 100%;
+    height: 25%;
+    display: block;
+    margin-bottom:10px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 8px 0px grey;
+}
+
+.event-date{
+    position:relative;
+    float: left;
+    width: 25%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#008080), to(#00cdcd));
+    background-image: -webkit-linear-gradient(top, #008080, #00cdcd);
+    background-image: -moz-linear-gradient(top, #008080, #00cdcd);
+    background-image: linear-gradient(to top, #008080, #00cdcd);
+    height: 100%;
+    color: white
+}
+
+.event-date>.date {
+    text-align: center;
+}
+
+.event-date>.month-year {
+    text-align: center;
+}
+
+.event-description {
+    float: left;
+    width: 75%;
+    height: 100%;
+    background: #191919;
+}
+
+.alt {
+    background: #4c4c4c;
+}
+
 .brief {
     float:right;
     width:71%;
@@ -97,11 +138,20 @@
     color:teal;
 }
 
-.view-more {
-    margin-left: 20px;
-    cursor: pointer;
+.gallery {
+    padding-right:1%;
+    padding-left: 1%;
+    margin-top:1%;
+    margin-bottom: 1%;
+    height:50vh;
+}
+
+.gallery>h1 {
+    color:teal;
 }
 
 .view-more {
+    margin-left: 20px;
+    cursor: pointer;
     color: teal;
 }

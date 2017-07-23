@@ -12,7 +12,29 @@
         <div class="calender">
             <h3> Event Calender</h3>
             <br>
-            <span> schedule coming soon...</span>
+            <div class="event">
+                <div class="event-date">
+                    <h1 class="date">30</h1>
+                    <p class="month-year">Oct, 2017</p>
+                </div>
+                <div class="event-description"></div>
+            </div>
+
+            <div class="event alt">
+                <div class="event-date">
+                    <h1 class="date">Jan</h1>
+                    <p class="month-year">2018</p>
+                </div>
+                <div class="event-description"></div>
+            </div>
+
+            <div class="event alt">
+                <div class="event-date">
+                    <h1 class="date">FEB</h1>
+                    <p class="month-year">2018</p>
+                </div>
+                <div class="event-description"></div>
+            </div>
         </div>
         <div class="brief left-vertical-bar">
             <div class="brief-question">
@@ -64,16 +86,31 @@
 
     <div class="horizontal-bar"></div>
 
-        <div class="testimonials">
-            <h1>Our Testimonials</h1>
-            <div class="testimonial-images" (click)="viewTestimonials()">
-                <div id="test-img1"></div>
-                <div id="test-img2"></div>
-                <div id="test-img3"></div>
-                <div id="test-img4"></div>
-                <span class="view-more">
-                    more...
-                </span>
-            </div>
+    <div class="testimonials">
+        <h1>Our Testimonials</h1>
+        <div class="testimonial-images" (click)="viewTestimonials()">
+            <div id="test-img1"></div>
+            <div id="test-img2"></div>
+            <div id="test-img3"></div>
+            <div id="test-img4"></div>
+            <span class="view-more">
+                more...
+            </span>
         </div>
+    </div>
+    <div class="horizontal-bar"></div>
+
+    <div class="gallery">
+        <h1>Gallery</h1>
+        <div class="gallery-images" (click)="viewTestimonials()">
+            <div id="gallery-img1"></div>
+            <div id="gallery-img2"></div>
+            <div id="gallery-img3"></div>
+            <div id="gallery-img4"></div>
+            <span class="view-more">
+                more...
+            </span>
+        </div>
+    </div>
 </div>
+<prayash-footer></prayash-footer>

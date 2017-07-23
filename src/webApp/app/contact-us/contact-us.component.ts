@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector:'Contact-Us',
-    template:`<h1>Contact Us</h1>`
+    template:`<div class="underConstruction"></div>`
 })
 export class ContactUsComponent{
 }
