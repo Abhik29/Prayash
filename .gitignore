@@ -61,4 +61,4 @@ typings/
 .env
 
 src/dist/
-src/webApp/assets
+#src/webApp/assets
