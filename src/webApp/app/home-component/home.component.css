@@ -1,14 +1,3 @@
-.cover {
-    position:relative;
-    height: 75vh;
-    padding-bottom: 2vh;
-}
-.cover>img {
-    position:absolute;
-    width: 100%;
-    height:73vh;
-    opacity:1;
-}
 .cover>.read {
     position: absolute;
     top: 49vh;

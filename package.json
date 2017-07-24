@@ -9,7 +9,9 @@
     "start_nodemon": "nodemon ./src/server/api.js",
     "serve": "lite-server -c=bs-config.json",
     "webpack:dev:serve": "webpack-dev-server --content-base src/dist/",
-    "heroku-postbuild": "webpack --config ./webpack.config.js --progress"
+    "build": "webpack --config ./webpack.config.js --progress",
+    "build-aot":"node_modules/.bin/ngc -p src/webApp/tsconfig-aot.json",
+    "heroku-postbuild":"npm run build-aot && npm run build"
   },
   "author": "abhik_dey29@yahoo.in",
   "license": "ISC",

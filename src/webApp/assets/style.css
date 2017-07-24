@@ -15,6 +15,15 @@ body {
 .notice {
 }
 
+.cover {
+    position:relative;
+    height: 75vh;
+    background:url("./images/home_cover.jpeg") no-repeat;
+    width: 100%;
+    padding-bottom: 2vh;
+    background-size: contain;
+}
+
 #loader {
     position:relative;
     display:block;
@@ -119,15 +128,15 @@ body {
 }
 
 .testimonial-images>#test-img2 {
-    background-image: url('./images/test-img-2.tif');
+    background-image: url('./images/test-img-2.jpg');
 }
 
 .testimonial-images>#test-img3 {
-    background-image: url('./images/test-img-3.tif');
+    background-image: url('./images/test-img-3.jpg');
 }
 
 .testimonial-images>#test-img4 {
-    background-image: url('./images/test-img-3.tif');
+    background-image: url('./images/test-img-4.jpg');
 }
 
 .gallery-images>div {
@@ -147,14 +156,14 @@ body {
     animation: halfFadeIn 0.5s;
 }
 .gallery-images>#gallery-img1 {
-    background-image: url('./images/brief-bg-1.JPG');
+    background-image: url('./images/gallery-1.JPG');
 }
 .gallery-images>#gallery-img2 {
-    background-image: url('./images/brief-bg-1.JPG');
+    background-image: url('./images/gallery-2.jpg');
 }
 
 .gallery-images>#gallery-img3 {
-    background-image: url('./images/brief-bg-1.JPG');
+    background-image: url('./images/gallery-3.JPG');
 }
 
 .gallery-images>#gallery-img4 {
