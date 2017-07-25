@@ -8,17 +8,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationStart } from '@angular/router';
 var ContactHeaderComponent = (function () {
     function ContactHeaderComponent(router) {
+        var _this = this;
         this.router = router;
         this.tabSelected = 'home';
+        this.routeSubscribe = this.router.events
+            .subscribe(function (event) {
+            if (event instanceof NavigationStart) {
+                _this.tabSelected = event['url'].split('/')[1];
+            }
+        });
     }
     ContactHeaderComponent.prototype.navTabClicked = function (tabClicked) {
         if (this.tabSelected !== tabClicked) {
             this.tabSelected = tabClicked;
             this.router.navigateByUrl(tabClicked);
         }
+    };
+    ContactHeaderComponent.prototype.goToFaceBook = function () {
+        window.open('https://www.facebook.com/groups/243340465790122/?notif_t=group_added_to_group&notif_id=1500930590535884');
+    };
+    ContactHeaderComponent.prototype.ngOnDestroy = function () {
+        this.routeSubscribe.unsubscribe();
     };
     ContactHeaderComponent = __decorate([
         Component({

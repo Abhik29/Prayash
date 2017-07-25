@@ -6,7 +6,6 @@
 .contact-header {
     height:30px;
     background-color: #373737;
-    /*opacity: 0.8;*/
     padding: 5px 50px;
 }
 
@@ -25,6 +24,9 @@ i {
 .contact-social>span {
     font-size:11px;
 }
+.contact-social>i:hover {
+    cursor: pointer;
+}
 
 .contact-personal {
     float: right;
@@ -36,7 +38,7 @@ i {
 
 .header-bar {
     display: table;
-    background-color: #f4f4f4;
+    background-color: #fff;
     height: 50px;
     padding: 15px 0px;
     width:100%
@@ -52,6 +54,7 @@ i {
 .title {
     float:left;
     font-style: italic;
+    /*font-family: 'Artifika', serif;*/
 }
 .title>a {
     text-decoration: none;

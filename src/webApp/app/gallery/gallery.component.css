@@ -9,8 +9,10 @@
     height: 40vh;
     width: 21%;
     display: block;
-    background: rgba(55,55,55,0.1);
+    background: white;
     margin:0% 2% 2%;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px 0px grey;
 }
 
 .gal-image-folder:nth-child(4n) {
@@ -20,6 +22,8 @@
 .gal-img>img {
     width: 100%;
     min-height: 32vh;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 3px 6px 0px grey;
 }
 
 .gal-img-desc {
@@ -28,5 +32,5 @@
     height: 10%;
     text-align: center;
     color: teal;
-    padding: 0px 2px;
+    padding: 5px 2px;
 }

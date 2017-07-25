@@ -17,7 +17,7 @@ export const RenderType_AppComponent:i0.RendererType2 = i0.ɵcrt({encapsulation:
 export function View_AppComponent_0(_l:any):i0.ɵViewDefinition {
   return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'prayas-contact-header',
       ([] as any[]),(null as any),(null as any),(null as any),i1.View_ContactHeaderComponent_0,
-      i1.RenderType_ContactHeaderComponent)),i0.ɵdid(49152,(null as any),0,i2.ContactHeaderComponent,
+      i1.RenderType_ContactHeaderComponent)),i0.ɵdid(180224,(null as any),0,i2.ContactHeaderComponent,
       [i3.Router],(null as any),(null as any)),(_l()(),i0.ɵted((null as any),['\n'])),
       (_l()(),i0.ɵeld(16777216,(null as any),(null as any),1,'router-outlet',[['class',
           'router-outlet']],(null as any),(null as any),(null as any),(null as any),

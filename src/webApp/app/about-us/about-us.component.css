@@ -1,0 +1,138 @@
+.about-us-view {
+    width: 150vh;
+    margin: 5% auto;
+    background: white;
+    box-shadow: 4px 4px 4px 0 grey;
+}
+.image-container{
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+}
+
+.image-container>div {
+    display: inline-block;
+}
+
+.image-container>div>img {
+    width: 45vh;
+    height: 45vh;
+    border-radius: 22.5vh;
+    position: absolute;
+}
+
+.image-container>#img-1>img {
+    left:2.5vh;
+    -webkit-animation: swipeIn1 0.5s;
+    animation: swipeIn1 0.5s;
+}
+@keyframes swipeIn1 {
+    0% {left:-45vh}
+}
+@-webkit-keyframes swipeIn1 {
+    0% {left:-45vh}
+}
+
+.image-container>#img-2>img {
+    right:52.5vh;
+    -webkit-animation: swipeIn2 0.5s;
+    animation: swipeIn2 0.5s;
+}
+@keyframes swipeIn2 {
+    0% {right:-45vh}
+}
+@-webkit-keyframes swipeIn2 {
+    0% {left:-45vh}
+}
+
+.image-container>#img-3>img {
+    left:102.5vh;
+    -webkit-animation: swipeIn1 0.5s;
+    animation: swipeIn1 0.5s;
+}
+
+.about-us {
+    /*margin-top:50vh;*/
+    color: teal;
+    padding: 10vh;
+}
+.who>h2{
+    width: 100%;
+    text-align: center;
+}
+
+.who-desc>p{
+    margin-top:2%;
+    line-height: 1.42;
+    text-align: justify;
+}
+
+.what {
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.activity{
+    margin-top:2%;
+}
+
+.activity ul {
+    margin-left:15%;
+}
+
+.main-events {
+    margin-top:5%;
+}
+
+/*.main-events>div {
+    float:left;
+    width: 50%;
+    padding:10px 5px 10px 5px;
+}*/
+
+.c-s-camp,.b-d-camp {
+    margin-top:5%;
+}
+
+.c-s-camp,.b-d-camp h2 {
+    width:100%;
+    text-align: center;
+}
+.c-s-camp p,.b-d-camp p {
+    margin-top:5%;
+    line-height: 1.42;
+    text-align: justify;
+}
+
+.exec-com {
+    margin-top:5%;
+}
+
+.exec-com h2 {
+    width:100%;
+    text-align: center;
+}
+
+.member-batch {
+    display: inline-block;
+    width: 60vh;
+    height: 10vh;
+    background: rgba(55,55,55,0.1);
+    margin: 1vh;
+    padding: 9px;
+}
+
+.initials {
+    display: inline-block;
+    background: rgba(55,55,55,1);
+    padding: 3.5vh;
+    border-radius: 50vh;
+    border: 1px solid teal;
+    color: white;
+}
+
+.details {
+    display: inline-block;
+    margin-left: 3vh;
+}
