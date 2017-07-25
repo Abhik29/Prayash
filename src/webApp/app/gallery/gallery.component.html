@@ -1,0 +1,10 @@
+<div class="gallery-view">
+    <div *ngFor="let image of gallery; let i = index" [attr.id]="'gal-img-' + i + 1" class="gal-image-folder">
+        <div class="gal-img">
+            <img [src]="ref + image.file">
+        </div>
+         <div class="gal-img-desc">
+            <span>{{image.description}}</span>
+        </div>
+    </div>
+</div>

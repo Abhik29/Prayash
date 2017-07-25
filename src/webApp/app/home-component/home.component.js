@@ -17,6 +17,9 @@ var HomeComponent = (function () {
     HomeComponent.prototype.viewTestimonials = function () {
         this.router.navigateByUrl('testimonials');
     };
+    HomeComponent.prototype.viewGallery = function () {
+        this.router.navigateByUrl('gallery');
+    };
     HomeComponent = __decorate([
         Component({
             selector: 'home',

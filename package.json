@@ -10,8 +10,8 @@
     "serve": "lite-server -c=bs-config.json",
     "webpack:dev:serve": "webpack-dev-server --content-base src/dist/",
     "build": "webpack --config ./webpack.config.js --progress",
-    "build-aot":"node_modules/.bin/ngc -p src/webApp/tsconfig-aot.json",
-    "heroku-postbuild":"npm run build-aot && npm run build"
+    "build-aot": "node_modules/.bin/ngc -p src/webApp/tsconfig-aot.json",
+    "heroku-postbuild": "npm run build-aot && npm run build"
   },
   "author": "abhik_dey29@yahoo.in",
   "license": "ISC",
@@ -34,6 +34,7 @@
     "awesome-typescript-loader": "^3.1.2",
     "base-href-webpack-plugin": "^1.0.2",
     "body-parser": "^1.17.1",
+    "copy-webpack-plugin": "^4.0.1",
     "core-js": "^2.4.1",
     "css-loader": "^0.28.0",
     "express": "^4.15.2",

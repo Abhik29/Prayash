@@ -1,0 +1,32 @@
+.gallery-view {
+    padding:5%;
+    /*height:67.5vh;*/
+}
+
+.gal-image-folder {
+    position: relative;
+    float: left;
+    height: 40vh;
+    width: 21%;
+    display: block;
+    background: rgba(55,55,55,0.1);
+    margin:0% 2% 2%;
+}
+
+.gal-image-folder:nth-child(4n) {
+  margin-right: 0;
+}
+
+.gal-img>img {
+    width: 100%;
+    min-height: 32vh;
+}
+
+.gal-img-desc {
+    font-family: 'Artifika', serif;
+    font-size: 14px;
+    height: 10%;
+    text-align: center;
+    color: teal;
+    padding: 0px 2px;
+}

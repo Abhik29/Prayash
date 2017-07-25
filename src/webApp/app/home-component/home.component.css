@@ -1,10 +1,20 @@
+.cover {		
+     position:relative;		
+     height: 75vh;		
+     padding-bottom: 2vh;		
+ }		
+ .cover>img {		
+     position:absolute;		
+     width: 100%;		
+     height:73vh;		
+     opacity:1;		
+ }
 .cover>.read {
     position: absolute;
     top: 49vh;
     left: 6%;
     color: white;
 }
-
 .cover>.read>h3 {
     font-size: 50px;
     font-weight: 400;
@@ -115,7 +125,46 @@
     background: url('../assets/images/brief-bg-2.JPG');
     background-size: contain;
 }*/
+.brief-overlay {
+    position:absolute;
+    left:-100%;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    border-left: 1px solid teal;
+}
+.brief-overlay>i {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    right:-200%;
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    font: 18px 'Roboto Condensed',sans-serif;
+}
 
+.img-holder:hover>.brief-overlay {
+    left:0;
+    opacity: 1;
+}
+
+.img-holder:hover>.brief-overlay>i {
+    right:0;
+}
+
+.brief-overlay:hover {
+    left:-100%;
+    opacity:0;
+}
 .mission-vision-history {
     padding-right:1%;
     padding-left: 1%;

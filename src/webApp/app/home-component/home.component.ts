@@ -16,4 +16,8 @@ export class HomeComponent{
     viewTestimonials () {
         this.router.navigateByUrl('testimonials');
     }
+
+    viewGallery () {
+        this.router.navigateByUrl('gallery');
+    }
 }

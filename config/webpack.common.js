@@ -2,6 +2,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var helpers = require('./helpers');
+var copyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -31,7 +32,7 @@ module.exports = {
       },
       {
         test: /\.(png|JPG|jpe?g|tif|gif|svg|woff|woff2|ttf|eot|ico)$/,
-        loader: 'file-loader?name=assets/[name].[hash].[ext]'
+        loader: 'file-loader?name=assets/[name].[ext]'
       },
       {
         test: /\.css$/,
@@ -63,6 +64,12 @@ module.exports = {
       favicon: 'src/webApp/favicon.png',
       template: 'src/webApp/index.html'
     }),
-    //new 
+
+    new copyPlugin([{
+      context:'src/',
+      from:'webApp/assets/images/*.*',
+      to:'assets/[name].[ext]'
+    }])
+    
   ]
 };
