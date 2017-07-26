@@ -12,7 +12,7 @@ export class GalleryComponent{
         {"description":"Art Competition on Blood Donation Camp","file":"img2.jpeg"},
         {"description":"Celebration of World Environment Day","file":"img3.jpeg"},
         {"description":"Chorous Songs Rehearsal","file":"img4.jpeg"},
-        {"description":"Counselling Session with Parents By Child Pshycologist","file":"img5.jpeg"},
+        {"description":"Counselling Session with Parents By Child Nutritionist","file":"img5.jpeg"},
         {"description":"Craft Session","file":"img6.jpeg"},
         {"description":"Demostration of Craft","file":"img7.jpeg"},
         {"description":"Free Health Check Up in Association with SRL Cherish","file":"img8.jpeg"},
