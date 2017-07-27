@@ -20,10 +20,10 @@ var AboutUsComponent = (function () {
             { "name": "Mr. Radha Madhab Majumder", "designation": "Secretary" },
             { "name": "Mr. Dipankar Debnath", "designation": "Assistant Secretary" },
             { "name": "Mr. Nilav Nayan Bordoloi", "designation": "Workshop Co-ordinator" },
-            { "name": "Smt. Punam Paul", "designations": "Cultural Secretary" },
-            { "name": "Smt. Mohana Banik", "designation": "Publicity Secretary" },
-            { "name": "Mr. Mrinal Chanda", "designation": "Treasurer" },
-            { "name": "Smt. Arpita Bose", "designation": "Assistant Treasurer" },
+            { "name": "Miss Punam Paul", "designations": "Cultural Secretary" },
+            { "name": "Mrs. Mohana Banik", "designation": "Publicity Secretary" },
+            { "name": "Mr Mrinal Chanda", "designation": "Treasurer" },
+            { "name": "Miss. Arpita Bose", "designation": "Assistant Treasurer" },
             { "name": "Dr. Bhupesh Bhagawati", "designation": "Executive Member" },
             { "name": "Smt. Rina Adak", "designation": "Executive Member" }
         ];

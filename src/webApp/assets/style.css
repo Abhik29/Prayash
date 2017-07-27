@@ -1,3 +1,19 @@
+.mobile-device{
+    display:none;
+}
+
+@media screen and (max-width: 1023px) {
+    .mobile-device{
+        display:block;
+        width:100%;
+        text-align: center;
+    }
+    .higher-resolution{
+        display:none;
+    }
+}
+
+
 /* latin */
 @font-face {
   font-family: 'Artifika';
