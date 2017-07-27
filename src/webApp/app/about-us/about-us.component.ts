@@ -26,7 +26,7 @@ export class AboutUsComponent{
             {"name":"Mr Mrinal Chanda","designation":"Treasurer"},
             {"name":"Miss. Arpita Bose","designation":"Assistant Treasurer"},
             {"name":"Dr. Bhupesh Bhagawati","designation":"Executive Member"},
-            {"name":"Smt. Rina Adak","designation":"Executive Member"}
+            {"name":"Miss. Rina Adak","designation":"Executive Member"}
         ]
 
         this.execMembers = this.execMembers.map((value)=>{
