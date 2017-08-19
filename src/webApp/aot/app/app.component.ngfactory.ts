@@ -16,13 +16,21 @@ export const RenderType_AppComponent:i0.RendererType2 = i0.ɵcrt({encapsulation:
     data:{}});
 export function View_AppComponent_0(_l:any):i0.ɵViewDefinition {
   return i0.ɵvid(0,[(_l()(),i0.ɵeld(0,(null as any),(null as any),1,'prayas-contact-header',
-      ([] as any[]),(null as any),(null as any),(null as any),i1.View_ContactHeaderComponent_0,
-      i1.RenderType_ContactHeaderComponent)),i0.ɵdid(180224,(null as any),0,i2.ContactHeaderComponent,
-      [i3.Router],(null as any),(null as any)),(_l()(),i0.ɵted((null as any),['\n'])),
-      (_l()(),i0.ɵeld(16777216,(null as any),(null as any),1,'router-outlet',[['class',
-          'router-outlet']],(null as any),(null as any),(null as any),(null as any),
-          (null as any))),i0.ɵdid(212992,(null as any),0,i3.RouterOutlet,[i3.ChildrenOutletContexts,
-          i0.ViewContainerRef,i0.ComponentFactoryResolver,[8,(null as any)],i0.ChangeDetectorRef],
+      ([] as any[]),(null as any),[['document','click']],(_v,en,$event) => {
+        var ad:boolean = true;
+        if (('document:click' === en)) {
+          const pd_0:any = ((<any>(($event.target.className !== 'fa fa-bars') && i0.ɵnov(_v,
+              1).toggleSmMenu(false))) !== false);
+          ad = (pd_0 && ad);
+        }
+        return ad;
+      },i1.View_ContactHeaderComponent_0,i1.RenderType_ContactHeaderComponent)),i0.ɵdid(180224,
+      (null as any),0,i2.ContactHeaderComponent,[i3.Router],(null as any),(null as any)),
+      (_l()(),i0.ɵted((null as any),['\n'])),(_l()(),i0.ɵeld(16777216,(null as any),
+          (null as any),1,'router-outlet',[['class','router-outlet']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),i0.ɵdid(212992,
+          (null as any),0,i3.RouterOutlet,[i3.ChildrenOutletContexts,i0.ViewContainerRef,
+              i0.ComponentFactoryResolver,[8,(null as any)],i0.ChangeDetectorRef],
           (null as any),(null as any))],(_ck,_v) => {
     _ck(_v,4,0);
   },(null as any));
@@ -35,4 +43,4 @@ export function View_AppComponent_Host_0(_l:any):i0.ɵViewDefinition {
 }
 export const AppComponentNgFactory:i0.ComponentFactory<i4.AppComponent> = i0.ɵccf('my-app',
     i4.AppComponent,View_AppComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovRnJlZUxhbmNpbmcvcHJheWFzL2FwcGxpY2F0aW9uL3NyYy93ZWJBcHAvYXBwL2FwcC5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vRDovRnJlZUxhbmNpbmcvcHJheWFzL2FwcGxpY2F0aW9uL3NyYy93ZWJBcHAvYXBwL2FwcC5jb21wb25lbnQudHMiLCJuZzovLy9EOi9GcmVlTGFuY2luZy9wcmF5YXMvYXBwbGljYXRpb24vc3JjL3dlYkFwcC9hcHAvYXBwLmNvbXBvbmVudC5odG1sIiwibmc6Ly8vRDovRnJlZUxhbmNpbmcvcHJheWFzL2FwcGxpY2F0aW9uL3NyYy93ZWJBcHAvYXBwL2FwcC5jb21wb25lbnQudHMuQXBwQ29tcG9uZW50X0hvc3QuaHRtbCJdLCJzb3VyY2VzQ29udGVudCI6WyIgIiwiPHByYXlhcy1jb250YWN0LWhlYWRlcj48L3ByYXlhcy1jb250YWN0LWhlYWRlcj5cclxuPHJvdXRlci1vdXRsZXQgY2xhc3M9XCJyb3V0ZXItb3V0bGV0XCI+PC9yb3V0ZXItb3V0bGV0PiIsIjxteS1hcHA+PC9teS1hcHA+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQTswQ0FBQSxVQUFBO01BQUEseUNBQStDO01BQy9DO1VBQUE7VUFBQSx1QkFBQTswREFBQTtVQUFBO0lBQUE7Ozs7b0JDREE7TUFBQTthQUFBOzs7OyJ9
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovRnJlZUxhbmNpbmcvcHJheWFzL2FwcGxpY2F0aW9uL3NyYy93ZWJBcHAvYXBwL2FwcC5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vRDovRnJlZUxhbmNpbmcvcHJheWFzL2FwcGxpY2F0aW9uL3NyYy93ZWJBcHAvYXBwL2FwcC5jb21wb25lbnQudHMiLCJuZzovLy9EOi9GcmVlTGFuY2luZy9wcmF5YXMvYXBwbGljYXRpb24vc3JjL3dlYkFwcC9hcHAvYXBwLmNvbXBvbmVudC5odG1sIiwibmc6Ly8vRDovRnJlZUxhbmNpbmcvcHJheWFzL2FwcGxpY2F0aW9uL3NyYy93ZWJBcHAvYXBwL2FwcC5jb21wb25lbnQudHMuQXBwQ29tcG9uZW50X0hvc3QuaHRtbCJdLCJzb3VyY2VzQ29udGVudCI6WyIgIiwiPHByYXlhcy1jb250YWN0LWhlYWRlcj48L3ByYXlhcy1jb250YWN0LWhlYWRlcj5cclxuPHJvdXRlci1vdXRsZXQgY2xhc3M9XCJyb3V0ZXItb3V0bGV0XCI+PC9yb3V0ZXItb3V0bGV0PiIsIjxteS1hcHA+PC9teS1hcHA+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQTtRQUFBO1FBQUE7VUFBQTtjQUFBO1VBQUE7UUFBQTtRQUFBO01BQUEsaUZBQUE7TUFBQTtNQUErQyx1Q0FDL0M7VUFBQTtVQUFBLGlFQUFBO1VBQUE7MENBQUE7VUFBQTtJQUFBOzs7O29CQ0RBO01BQUE7YUFBQTs7OzsifQ==

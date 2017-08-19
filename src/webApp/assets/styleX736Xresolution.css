@@ -1,0 +1,17 @@
+.mobile-device{
+    display:block;
+    width:100%;
+    text-align: center;
+    color:teal;
+}
+.higher-resolution{
+    display:none;
+}
+.header-bar {
+    display: none;
+}
+
+.left-vertical-bar {
+    background-size:	0px 0% !important;
+    background-position: 0 0, 0% 0 !important;
+}

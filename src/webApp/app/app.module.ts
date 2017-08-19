@@ -15,6 +15,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { TouchToScroll } from './common/touch-to-scroll';
+
 //include later
 //import { NavigationComponent } from './navigation/navigation.component'
 
@@ -27,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
                   ContactUsComponent,
                   AboutUsComponent,
                   GalleryComponent,
-                  FooterComponent  ],
+                  FooterComponent,
+                  TouchToScroll  ],
   providers:    [ ],
   bootstrap:    [ AppComponent ]
 })

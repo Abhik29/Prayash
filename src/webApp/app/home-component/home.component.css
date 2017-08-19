@@ -225,3 +225,24 @@
     cursor: pointer;
     color: teal;
 }
+
+@media screen and (max-width: 736px) {
+    .calender {
+        width: 98%;
+    }
+    .event-description>p {
+        font-size: 18px;
+    }
+    .brief {
+        display:none;
+    }
+    .mission-vision-history>div {
+        width:98%;
+    }
+    .testimonials {
+        display: none;
+    }
+    .gallery {
+        display: none;
+    }
+}

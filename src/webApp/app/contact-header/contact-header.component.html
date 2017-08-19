@@ -1,18 +1,38 @@
 <div class="header">
     <div class="contact-header">
-        <div class="contact-social">
-            <i class="fa fa-facebook" (click)="goToFaceBook()"aria-hidden="true"></i>
-            <!--&nbsp;|&nbsp;
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            &nbsp;|&nbsp;
-            <i class="fa fa-instagram" aria-hidden="true"></i>-->
+        <div class="lg-device">
+            <div class="contact-social">
+                <!--&nbsp;|&nbsp;
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                &nbsp;|&nbsp;
+                <i class="fa fa-instagram" aria-hidden="true"></i>-->
+            </div>
+            <div class="contact-personal">
+                <i class="fa fa-facebook" (click)="goToFaceBook()"aria-hidden="true"></i>
+                &nbsp;|&nbsp;
+                <i class="fa fa-envelope" aria-hidden="true"></i> prayash.2011@rediffmail.com
+                &nbsp;|&nbsp;
+                <i class="fa fa-phone" aria-hidden="true"></i> 9706208825
+            </div>
         </div>
-        <div class="contact-personal">
-            <i class="fa fa-envelope" aria-hidden="true"></i> prayash.2011@rediffmail.com
-            &nbsp;|&nbsp;
-            <i class="fa fa-phone" aria-hidden="true"></i> 9706208825
+        <div class="sm-device">
+            <div class="sm-title">
+                <a href=''><h1>Prayash</h1></a>
+            </div>
+            <div class="hamburger" (click)="toggleSmMenu(!openMenu)">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
         </div>
     </div>
+</div>
+<div *ngIf="openMenu" class="sm-menu">
+    <ul>
+        <li [ngClass]="{'active':tabSelected==='home'}" (click)="navTabClicked('home')"><a>Home</a></li>
+        <li [ngClass]="{'active':tabSelected==='aboutUs'}" (click)="navTabClicked('aboutUs')"><a>About Us</a></li>
+        <li [ngClass]="{'active':tabSelected==='testimonials'}" (click)="navTabClicked('testimonials')"><a>Testimonials</a></li>
+        <li [ngClass]="{'active':tabSelected==='gallery'}" (click)="navTabClicked('gallery')"><a>Gallery</a></li>
+        <li [ngClass]="{'active':tabSelected==='contact'}" (click)="navTabClicked('contact')"><a>Contact</a></li>
+    </ul>
 </div>
 <div class="header-bar">
     <div>

@@ -2,19 +2,6 @@
     display:none;
 }
 
-@media screen and (max-width: 1023px) {
-    .mobile-device{
-        display:block;
-        width:100%;
-        text-align: center;
-        color:teal;
-    }
-    .higher-resolution{
-        display:none;
-    }
-}
-
-
 /* latin */
 @font-face {
   font-family: 'Artifika';
@@ -245,4 +232,30 @@ body {
 		to {
 				-webkit-transform: rotateY(360deg);
 		}
+}
+
+
+@media screen and (max-width: 736px) {
+    @import "./styleX736Xresolution.css"; 
+}
+
+/* ######################### PRANAY ################################*/
+
+.ellipse-container {
+    border:1px solid;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ellipse-container>span {
+    transition: transform 10s;
+}
+
+.scroll-container {
+    text-overflow: initial;
+}
+.scroll-container>span {
+    display:inline-block;
+    transform: translateX(-80%);
 }

@@ -20,6 +20,7 @@ var ContactHeaderComponent = (function () {
                 _this.tabSelected = event['url'].split('/')[1];
             }
         });
+        this.openMenu = false;
     }
     ContactHeaderComponent.prototype.navTabClicked = function (tabClicked) {
         if (this.tabSelected !== tabClicked) {
@@ -30,12 +31,18 @@ var ContactHeaderComponent = (function () {
     ContactHeaderComponent.prototype.goToFaceBook = function () {
         window.open('https://www.facebook.com/groups/243340465790122/?notif_t=group_added_to_group&notif_id=1500930590535884');
     };
+    ContactHeaderComponent.prototype.toggleSmMenu = function (display) {
+        this.openMenu = display;
+    };
     ContactHeaderComponent.prototype.ngOnDestroy = function () {
         this.routeSubscribe.unsubscribe();
     };
     ContactHeaderComponent = __decorate([
         Component({
             selector: "prayas-contact-header",
+            host: {
+                '(document:click)': "($event.target.className !== 'fa fa-bars') && toggleSmMenu(false)",
+            },
             templateUrl: "./contact-header.component.html",
             styleUrls: ['contact-header.component.css']
         }),
