@@ -41,7 +41,7 @@ var ContactHeaderComponent = (function () {
         Component({
             selector: "prayas-contact-header",
             host: {
-                '(document:click)': "($event.target.className !== 'fa fa-bars') && toggleSmMenu(false)",
+                '(document:click)': "($event.target.className !== 'fa fa-bars fa-2x') && toggleSmMenu(false)",
             },
             templateUrl: "./contact-header.component.html",
             styleUrls: ['contact-header.component.css']

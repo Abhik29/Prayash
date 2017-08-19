@@ -34,3 +34,19 @@
     color: teal;
     padding: 5px 2px;
 }
+
+@media screen and (max-width: 736px) {
+    .gal-image-folder {
+        width: 96%;
+        height: 80vh;
+        margin-bottom:10vh;
+    }
+
+    .gal-image-folder:nth-child(4n) {
+        margin-right: 2%;
+    }
+
+    .gal-img>img {
+        height: 70vh;
+    }
+}

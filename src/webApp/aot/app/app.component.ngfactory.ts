@@ -19,7 +19,7 @@ export function View_AppComponent_0(_l:any):i0.ɵViewDefinition {
       ([] as any[]),(null as any),[['document','click']],(_v,en,$event) => {
         var ad:boolean = true;
         if (('document:click' === en)) {
-          const pd_0:any = ((<any>(($event.target.className !== 'fa fa-bars') && i0.ɵnov(_v,
+          const pd_0:any = ((<any>(($event.target.className !== 'fa fa-bars fa-2x') && i0.ɵnov(_v,
               1).toggleSmMenu(false))) !== false);
           ad = (pd_0 && ad);
         }
