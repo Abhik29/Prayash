@@ -1,5 +1,5 @@
 .about-us-view {
-    width: 150vh;
+    width: 80vw;
     margin: 5% auto;
     background: white;
     box-shadow: 4px 4px 4px 0 grey;
@@ -135,4 +135,10 @@
 .details {
     display: inline-block;
     margin-left: 3vh;
+}
+
+@media screen and (max-width: 736px) {
+    .about-us-view {
+        width: 100vh;
+    }
 }

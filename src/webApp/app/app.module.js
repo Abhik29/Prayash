@@ -17,7 +17,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
-import { TouchToScroll } from './common/touch-to-scroll';
+//common components
+import { EnlargeImageComponent } from './common/component/enlarge-image/enlarge-image.component';
 //include later
 //import { NavigationComponent } from './navigation/navigation.component'
 var AppModule = (function () {
@@ -34,7 +35,8 @@ var AppModule = (function () {
                 AboutUsComponent,
                 GalleryComponent,
                 FooterComponent,
-                TouchToScroll],
+                EnlargeImageComponent
+            ],
             providers: [],
             bootstrap: [AppComponent]
         })

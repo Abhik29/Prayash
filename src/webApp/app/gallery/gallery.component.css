@@ -13,6 +13,7 @@
     margin:0% 2% 2%;
     border-radius: 10px;
     box-shadow: 0px 3px 6px 0px grey;
+    cursor: pointer;
 }
 
 .gal-image-folder:nth-child(4n) {
@@ -48,5 +49,8 @@
 
     .gal-img>img {
         height: 70vh;
+    }
+    .enlarge-image {
+        display: none;
     }
 }

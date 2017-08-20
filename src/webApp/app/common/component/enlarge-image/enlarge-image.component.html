@@ -1,0 +1,12 @@
+<div *ngIf="file" [@myAnimation] class="enlarged-img-container">
+    <i class="fa fa-times close" (click)="close()" aria-hidden="true"></i>
+    <div class="img-holder">
+        <img [src]="referenceUrl + file">
+        <div class="img-desc">
+            <p>{{imageObj.description}}</p>
+        </div>
+    </div>
+    <div class="button-grid">
+        <button (click)="close()">Close</button>
+    </div>
+</div>

@@ -1,5 +1,5 @@
 <div class="gallery-view">
-    <div *ngFor="let image of gallery; let i = index" [attr.id]="'gal-img-' + i + 1" class="gal-image-folder">
+    <div *ngFor="let image of gallery; let i = index" [attr.id]="'gal-img-' + i + 1" class="gal-image-folder" (click)="enlargeImage(image)">
         <div class="gal-img">
             <img [src]="ref + image.file">
         </div>
@@ -8,3 +8,5 @@
         </div>
     </div>
 </div>
+
+<enlarge-image class="enlarge-image" [referenceUrl]="ref"></enlarge-image>

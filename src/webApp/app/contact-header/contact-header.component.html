@@ -8,7 +8,7 @@
                 <i class="fa fa-instagram" aria-hidden="true"></i>-->
             </div>
             <div class="contact-personal">
-                <i class="fa fa-facebook" (click)="goToFaceBook()"aria-hidden="true"></i>
+                <i class="fa fa-facebook hand-cursor" (click)="goToFaceBook()"aria-hidden="true"></i>
                 &nbsp;|&nbsp;
                 <i class="fa fa-envelope" aria-hidden="true"></i> prayash.2011@rediffmail.com
                 &nbsp;|&nbsp;
@@ -19,7 +19,7 @@
             <div class="sm-title">
                 <a href=''><h1>Prayash</h1></a>
             </div>
-            <div class="hamburger" (click)="toggleSmMenu(!openMenu)">
+            <div class="hamburger" [ngClass]="{'active':openMenu}" (click)="toggleSmMenu(!openMenu)">
                 <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
             </div>
         </div>

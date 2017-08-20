@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+
+import { EnlargeImageComponent } from '../common/component/enlarge-image/enlarge-image.component';
 
 @Component({
     selector:'gallery',
@@ -6,7 +8,10 @@ import { Component } from '@angular/core';
     styleUrls:['gallery.component.css']
 })
 export class GalleryComponent{
+    enlargeImageFile:string;
     ref:string = '/assets/';
+
+    @ViewChild(EnlargeImageComponent) enlargeImageChild: EnlargeImageComponent;
     gallery:any[]=[
         {"description":"A Session Of Music","file":"img1.JPG"},
         {"description":"Art Competition on Blood Donation Camp","file":"img2.jpeg"},
@@ -24,5 +29,9 @@ export class GalleryComponent{
         {"description":"Rabindra Nazrul Sandhya", "file":"img14.jpeg"},
         {"description":"Rabindra Sandhya", "file":"img15.jpeg"},
         {"description":"Yoga Session", "file":"img16.jpeg"}
-    ]
+    ];
+
+    enlargeImage(imageObj: any) {
+        this.enlargeImageChild.showImage(imageObj);
+    }
 }

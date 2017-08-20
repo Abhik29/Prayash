@@ -187,11 +187,10 @@
 
 .mission-vision-history>div>p {
     text-align: justify;
-    font-variant: small-caps;
-    font-weight: 500;
     font-style: oblique;
     font-size: large;
-    color: #373737
+    color: #373737;
+    padding: 10px;
 }
 
 .testimonials {

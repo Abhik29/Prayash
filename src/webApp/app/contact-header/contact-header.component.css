@@ -53,7 +53,6 @@ i {
 
 .sm-device {
     display:none;
-    font-style: italic;
 }
 .sm-title>a {
     font-weight: 100;
@@ -65,7 +64,9 @@ i {
 }
 .hamburger {
     float:right;
-    color:#dcd0c0;
+}
+.hamburger.active>i {
+    color: white;
 }
 .sm-menu {
     position: fixed;
@@ -91,6 +92,9 @@ i {
 }
 .sm-menu>ul>.active {
    background: #373737; 
+}
+.sm-menu>ul>.active>a {
+    color: #fff;
 }
 .title {
     float:left;
@@ -173,7 +177,8 @@ i {
         float:left;
     }
     i {
-        color:#dcd0c0;
+        transition: all 0.5s ease-in;
+        color:rgba(220, 208, 192, 0.6);
     }
     
 }

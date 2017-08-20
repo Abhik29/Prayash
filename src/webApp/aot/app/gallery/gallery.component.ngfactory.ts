@@ -9,21 +9,30 @@
 import * as i0 from './gallery.component.css.shim.ngstyle';
 import * as i1 from '@angular/core';
 import * as i2 from '@angular/common';
-import * as i3 from '../../../app/gallery/gallery.component';
+import * as i3 from '../common/component/enlarge-image/enlarge-image.component.ngfactory';
+import * as i4 from '../../../app/common/component/enlarge-image/enlarge-image.component';
+import * as i5 from '../../../app/gallery/gallery.component';
 const styles_GalleryComponent:any[] = [i0.styles];
 export const RenderType_GalleryComponent:i1.RendererType2 = i1.ɵcrt({encapsulation:0,
     styles:styles_GalleryComponent,data:{}});
 function View_GalleryComponent_1(_l:any):i1.ɵViewDefinition {
   return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),12,'div',[['class',
-      'gal-image-folder']],[[1,'id',0]],(null as any),(null as any),(null as any),
-      (null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵeld(0,
-      (null as any),(null as any),3,'div',[['class','gal-img']],(null as any),(null as any),
-      (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n            '])),
-      (_l()(),i1.ɵeld(0,(null as any),(null as any),0,'img',([] as any[]),[[8,'src',
-          4]],(null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
-          ['\n        '])),(_l()(),i1.ɵted((null as any),['\n         '])),(_l()(),
-          i1.ɵeld(0,(null as any),(null as any),4,'div',[['class','gal-img-desc']],
-              (null as any),(null as any),(null as any),(null as any),(null as any))),
+      'gal-image-folder']],[[1,'id',0]],[[(null as any),'click']],(_v,en,$event) => {
+    var ad:boolean = true;
+    var _co:any = _v.component;
+    if (('click' === en)) {
+      const pd_0:any = ((<any>_co.enlargeImage(_v.context.$implicit)) !== false);
+      ad = (pd_0 && ad);
+    }
+    return ad;
+  },(null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n        '])),(_l()(),
+      i1.ɵeld(0,(null as any),(null as any),3,'div',[['class','gal-img']],(null as any),
+          (null as any),(null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+      ['\n            '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),0,'img',([] as any[]),
+      [[8,'src',4]],(null as any),(null as any),(null as any),(null as any))),(_l()(),
+      i1.ɵted((null as any),['\n        '])),(_l()(),i1.ɵted((null as any),['\n         '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),4,'div',[['class','gal-img-desc']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
       (_l()(),i1.ɵted((null as any),['\n            '])),(_l()(),i1.ɵeld(0,(null as any),
           (null as any),1,'span',([] as any[]),(null as any),(null as any),(null as any),
           (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['',''])),(_l()(),
@@ -39,24 +48,30 @@ function View_GalleryComponent_1(_l:any):i1.ɵViewDefinition {
       });
 }
 export function View_GalleryComponent_0(_l:any):i1.ɵViewDefinition {
-  return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),4,'div',[['class',
-      'gallery-view']],(null as any),(null as any),(null as any),(null as any),(null as any))),
-      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵand(16777216,(null as any),
-          (null as any),1,(null as any),View_GalleryComponent_1)),i1.ɵdid(802816,(null as any),
-          0,i2.NgForOf,[i1.ViewContainerRef,i1.TemplateRef,i1.IterableDiffers],{ngForOf:[0,
-              'ngForOf']},(null as any)),(_l()(),i1.ɵted((null as any),['\n']))],(_ck,
-      _v) => {
-    var _co:i3.GalleryComponent = _v.component;
+  return i1.ɵvid(0,[i1.ɵqud(402653184,1,{enlargeImageChild:0}),(_l()(),i1.ɵeld(0,(null as any),
+      (null as any),4,'div',[['class','gallery-view']],(null as any),(null as any),
+      (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),
+      (_l()(),i1.ɵand(16777216,(null as any),(null as any),1,(null as any),View_GalleryComponent_1)),
+      i1.ɵdid(802816,(null as any),0,i2.NgForOf,[i1.ViewContainerRef,i1.TemplateRef,
+          i1.IterableDiffers],{ngForOf:[0,'ngForOf']},(null as any)),(_l()(),i1.ɵted((null as any),
+          ['\n'])),(_l()(),i1.ɵted((null as any),['\n\n'])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),1,'enlarge-image',[['class','enlarge-image']],(null as any),
+          (null as any),(null as any),i3.View_EnlargeImageComponent_0,i3.RenderType_EnlargeImageComponent)),
+      i1.ɵdid(49152,[[1,4]],0,i4.EnlargeImageComponent,([] as any[]),{referenceUrl:[0,
+          'referenceUrl']},(null as any))],(_ck,_v) => {
+    var _co:i5.GalleryComponent = _v.component;
     const currVal_0:any = _co.gallery;
-    _ck(_v,3,0,currVal_0);
+    _ck(_v,4,0,currVal_0);
+    const currVal_1:any = _co.ref;
+    _ck(_v,8,0,currVal_1);
   },(null as any));
 }
 export function View_GalleryComponent_Host_0(_l:any):i1.ɵViewDefinition {
   return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'gallery',([] as any[]),
       (null as any),(null as any),(null as any),View_GalleryComponent_0,RenderType_GalleryComponent)),
-      i1.ɵdid(49152,(null as any),0,i3.GalleryComponent,([] as any[]),(null as any),
+      i1.ɵdid(49152,(null as any),0,i5.GalleryComponent,([] as any[]),(null as any),
           (null as any))],(null as any),(null as any));
 }
-export const GalleryComponentNgFactory:i1.ComponentFactory<i3.GalleryComponent> = i1.ɵccf('gallery',
-    i3.GalleryComponent,View_GalleryComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovRnJlZUxhbmNpbmcvcHJheWFzL2FwcGxpY2F0aW9uL3NyYy93ZWJBcHAvYXBwL2dhbGxlcnkvZ2FsbGVyeS5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vRDovRnJlZUxhbmNpbmcvcHJheWFzL2FwcGxpY2F0aW9uL3NyYy93ZWJBcHAvYXBwL2dhbGxlcnkvZ2FsbGVyeS5jb21wb25lbnQudHMiLCJuZzovLy9EOi9GcmVlTGFuY2luZy9wcmF5YXMvYXBwbGljYXRpb24vc3JjL3dlYkFwcC9hcHAvZ2FsbGVyeS9nYWxsZXJ5LmNvbXBvbmVudC5odG1sIiwibmc6Ly8vRDovRnJlZUxhbmNpbmcvcHJheWFzL2FwcGxpY2F0aW9uL3NyYy93ZWJBcHAvYXBwL2dhbGxlcnkvZ2FsbGVyeS5jb21wb25lbnQudHMuR2FsbGVyeUNvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxkaXYgY2xhc3M9XCJnYWxsZXJ5LXZpZXdcIj5cclxuICAgIDxkaXYgKm5nRm9yPVwibGV0IGltYWdlIG9mIGdhbGxlcnk7IGxldCBpID0gaW5kZXhcIiBbYXR0ci5pZF09XCInZ2FsLWltZy0nICsgaSArIDFcIiBjbGFzcz1cImdhbC1pbWFnZS1mb2xkZXJcIj5cclxuICAgICAgICA8ZGl2IGNsYXNzPVwiZ2FsLWltZ1wiPlxyXG4gICAgICAgICAgICA8aW1nIFtzcmNdPVwicmVmICsgaW1hZ2UuZmlsZVwiPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICAgICA8ZGl2IGNsYXNzPVwiZ2FsLWltZy1kZXNjXCI+XHJcbiAgICAgICAgICAgIDxzcGFuPnt7aW1hZ2UuZGVzY3JpcHRpb259fTwvc3Bhbj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG48L2Rpdj4iLCI8Z2FsbGVyeT48L2dhbGxlcnk+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7OztvQkNDSTtNQUFBO01BQUEsZ0JBQTBHLCtDQUN0RztNQUFBO01BQUEsNENBQXFCO01BQ2pCO1VBQUEsOERBQThCO1VBQUEsaUJBQzVCLGdEQUNMO2lCQUFBO2NBQUE7TUFBMEIsbURBQ3ZCO1VBQUE7VUFBQSw4QkFBTSx3Q0FBNEI7aUJBQUEsZ0NBQ2hDOzs7UUFOd0M7UUFBbEQsV0FBa0QsU0FBbEQ7UUFFYTtRQUFMLFdBQUssU0FBTDtRQUdNO1FBQUE7Ozs7b0JBTmxCO01BQUE7TUFBMEIsMkNBQ3RCO1VBQUEsK0RBQUE7VUFBQTtjQUFBLDJCQU9NOzs7SUFQRDtJQUFMLFdBQUssU0FBTDs7OztvQkNESjtNQUFBO2FBQUE7VUFBQTs7OyJ9
+export const GalleryComponentNgFactory:i1.ComponentFactory<i5.GalleryComponent> = i1.ɵccf('gallery',
+    i5.GalleryComponent,View_GalleryComponent_Host_0,{},{},([] as any[]));
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiRDovRnJlZUxhbmNpbmcvcHJheWFzL2FwcGxpY2F0aW9uL3NyYy93ZWJBcHAvYXBwL2dhbGxlcnkvZ2FsbGVyeS5jb21wb25lbnQubmdmYWN0b3J5LnRzIiwidmVyc2lvbiI6Mywic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibmc6Ly8vRDovRnJlZUxhbmNpbmcvcHJheWFzL2FwcGxpY2F0aW9uL3NyYy93ZWJBcHAvYXBwL2dhbGxlcnkvZ2FsbGVyeS5jb21wb25lbnQudHMiLCJuZzovLy9EOi9GcmVlTGFuY2luZy9wcmF5YXMvYXBwbGljYXRpb24vc3JjL3dlYkFwcC9hcHAvZ2FsbGVyeS9nYWxsZXJ5LmNvbXBvbmVudC5odG1sIiwibmc6Ly8vRDovRnJlZUxhbmNpbmcvcHJheWFzL2FwcGxpY2F0aW9uL3NyYy93ZWJBcHAvYXBwL2dhbGxlcnkvZ2FsbGVyeS5jb21wb25lbnQudHMuR2FsbGVyeUNvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxkaXYgY2xhc3M9XCJnYWxsZXJ5LXZpZXdcIj5cclxuICAgIDxkaXYgKm5nRm9yPVwibGV0IGltYWdlIG9mIGdhbGxlcnk7IGxldCBpID0gaW5kZXhcIiBbYXR0ci5pZF09XCInZ2FsLWltZy0nICsgaSArIDFcIiBjbGFzcz1cImdhbC1pbWFnZS1mb2xkZXJcIiAoY2xpY2spPVwiZW5sYXJnZUltYWdlKGltYWdlKVwiPlxyXG4gICAgICAgIDxkaXYgY2xhc3M9XCJnYWwtaW1nXCI+XHJcbiAgICAgICAgICAgIDxpbWcgW3NyY109XCJyZWYgKyBpbWFnZS5maWxlXCI+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgIDxkaXYgY2xhc3M9XCJnYWwtaW1nLWRlc2NcIj5cclxuICAgICAgICAgICAgPHNwYW4+e3tpbWFnZS5kZXNjcmlwdGlvbn19PC9zcGFuPlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbjwvZGl2PlxyXG5cclxuPGVubGFyZ2UtaW1hZ2UgY2xhc3M9XCJlbmxhcmdlLWltYWdlXCIgW3JlZmVyZW5jZVVybF09XCJyZWZcIj48L2VubGFyZ2UtaW1hZ2U+IiwiPGdhbGxlcnk+PC9nYWxsZXJ5PiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7OztvQkNDSTtNQUFBO0lBQUE7SUFBQTtJQUEwRztNQUFBO01BQUE7SUFBQTtJQUExRztFQUFBLGdDQUF3SSwrQ0FDcEk7YUFBQTtVQUFBLDBEQUFxQjtNQUFBLHFCQUNqQjtNQUFBLHdFQUE4QjthQUFBLGdDQUM1QjtNQUNMO1VBQUE7TUFBMEIsbURBQ3ZCO1VBQUE7VUFBQSw4QkFBTSx3Q0FBNEI7aUJBQUEsZ0NBQ2hDOzs7UUFOd0M7UUFBbEQsV0FBa0QsU0FBbEQ7UUFFYTtRQUFMLFdBQUssU0FBTDtRQUdNO1FBQUE7Ozs7K0RBTmxCO01BQUE7TUFBQSw0Q0FBMEI7TUFDdEI7YUFBQTs0QkFBQSx5Q0FPTTtVQUFBLFNBQ0oseUNBRU47VUFBQTtVQUFBO2FBQUE7VUFBQTs7SUFWUztJQUFMLFdBQUssU0FBTDtJQVVpQztJQUFyQyxXQUFxQyxTQUFyQzs7OztvQkNYQTtNQUFBO2FBQUE7VUFBQTs7OyJ9
