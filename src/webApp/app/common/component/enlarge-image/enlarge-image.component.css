@@ -50,6 +50,7 @@
     opacity: 0;
     transition: all 0.5s ease-in;
     cursor: pointer;
+    z-index: 999;
 }
 
 .previous {
@@ -61,6 +62,19 @@
     color: #437179;
     padding: 2vh;
     font-size: 4vh;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.toggle-slide-show {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top:30vh;
+    color: rgba(255,255,255,0.8);
+    font-size: 7vh;
     opacity: 0;
     transition: all 0.5s ease-in;
     cursor: pointer;
@@ -81,11 +95,11 @@
     top: 65vh;
     width: 100%;
     text-align: center;
-    opacity: 0;
+    /*opacity: 0;*/
     transition: all 0.5s ease-in;
 }
 
-.img-holder:hover .next,.img-holder:hover .previous, .img-holder:hover .wrap-indexer{
+.img-holder:hover .next,.img-holder:hover .previous, .img-holder:hover .wrap-indexer, .img-holder:hover .toggle-slide-show{
     opacity: 1;
 }
 .indexer {

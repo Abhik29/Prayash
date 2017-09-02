@@ -5,6 +5,9 @@
         <img *ngIf="fileOdd" [@myAnimation] [src]="referenceUrl + fileOdd">
         <div class="previous" (click)="changeImage(-1)">&lt;</div>
         <div class="next" (click)="changeImage(1)">&gt;</div>
+        <div class="toggle-slide-show"> 
+            <i class="fa" [ngClass]="{'fa-play-circle-o':!slideShowTimer,'fa-pause-circle-o':slideShowTimer}" (click)="toggleSlideShow()"></i>
+        </div>
         <div class="wrap-indexer">
             <div *ngFor="let image of imageList; let index = index" class="indexer" [title]="image.description" (click)="showImage(image)" [ngClass]="{'active':index===imageIndex}"></div>
         </div>

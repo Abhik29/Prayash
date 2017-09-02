@@ -34,11 +34,16 @@ export class EnlargeImageComponent {
     fileOdd: string;
     imageObj: any;
     imageIndex: number;
+    slideShowTimer: any;
 
     private close() {
         this.fileEven = '';
         this.fileOdd = '';
         this.imageObj = {};
+        if (this.slideShowTimer) {
+            clearInterval(this.slideShowTimer);
+            this.slideShowTimer = '';
+        }
     }
 
     showImage(imageObj: any) {
@@ -71,5 +76,14 @@ export class EnlargeImageComponent {
         }
 
         this.showImage(imageObj);
+    }
+
+    toggleSlideShow() {
+        if (this.slideShowTimer) {
+            clearInterval(this.slideShowTimer);
+            this.slideShowTimer = '';
+        } else {
+            this.slideShowTimer = setInterval(() => this.changeImage(1),3000);
+        }
     }
 }
