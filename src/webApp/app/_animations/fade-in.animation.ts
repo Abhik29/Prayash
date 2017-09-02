@@ -9,6 +9,6 @@ export const fadeInAnimation =
             style({ visibility: 'hidden' }),
 
             // animation and styles at end of transition
-            animate('3s ease-in-out', style({ visibility: 'visible' }))
+            animate('3s ease-in', style({ visibility: 'visible' }))
         ]),
     ]);

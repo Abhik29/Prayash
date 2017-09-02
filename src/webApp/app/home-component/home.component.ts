@@ -7,7 +7,7 @@ import { fadeInAnimation } from '../_animations/index';
     templateUrl:'./home.component.html',
     styleUrls: [ 'home.component.css' ],
     animations: [ fadeInAnimation ],
-    host: { '[@fadeInAnimation]': '' }
+    //host: { '[@fadeInAnimation]': '' }
 })
 export class HomeComponent{
     constructor(private router:Router) {
