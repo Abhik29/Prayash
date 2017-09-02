@@ -1,7 +1,13 @@
-<div *ngIf="file" [@myAnimation] class="enlarged-img-container">
+<div *ngIf="fileEven || fileOdd" [@myAnimation] class="enlarged-img-container">
     <i class="fa fa-times close" (click)="close()" aria-hidden="true"></i>
     <div class="img-holder">
-        <img [src]="referenceUrl + file">
+        <img *ngIf="fileEven" [@myAnimation] [src]="referenceUrl + fileEven">
+        <img *ngIf="fileOdd" [@myAnimation] [src]="referenceUrl + fileOdd">
+        <div class="previous" (click)="changeImage(-1)">&lt;</div>
+        <div class="next" (click)="changeImage(1)">&gt;</div>
+        <div class="wrap-indexer">
+            <div *ngFor="let image of imageList; let index = index" class="indexer" [title]="image.description" (click)="showImage(image)" [ngClass]="{'active':index===imageIndex}"></div>
+        </div>
         <div class="img-desc">
             <p>{{imageObj.description}}</p>
         </div>

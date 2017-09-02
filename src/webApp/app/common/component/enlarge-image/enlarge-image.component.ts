@@ -17,7 +17,7 @@ import { Component, Input, trigger, transition, style, animate, state } from '@a
       transition(
         ':leave', [
             style({opacity: 1}),
-            animate('100ms', style({'opacity': 0})),
+            animate('300ms', style({'opacity': 0})),
         ]
         )
       ]
@@ -28,17 +28,48 @@ import { Component, Input, trigger, transition, style, animate, state } from '@a
 export class EnlargeImageComponent {
     @Input() 
     referenceUrl: string;
-
-    file: string;
+    @Input()
+    imageList: any[];
+    fileEven: string;
+    fileOdd: string;
     imageObj: any;
+    imageIndex: number;
 
     private close() {
-        this.file = '';
+        this.fileEven = '';
+        this.fileOdd = '';
         this.imageObj = {};
     }
 
     showImage(imageObj: any) {
-        this.file = imageObj.file;
+        
         this.imageObj = imageObj;
+        this.imageIndex = this.imageList.indexOf(imageObj);
+        if (this.imageIndex%2 === 0) {
+            this.fileOdd = '';
+            this.fileEven = imageObj.file;
+        } else {
+            this.fileEven = '';
+            this.fileOdd = imageObj.file;
+        }
+    }
+    changeImage(direction: number) {
+        let imageIdx = this.imageList.indexOf(this.imageObj),
+        imageObj: any;
+        if (direction > 0) {
+            if ((imageIdx+1) === this.imageList.length) {
+                imageObj = this.imageList[0];
+            } else {
+                imageObj = this.imageList[imageIdx+1];
+            }
+        } else {
+            if (imageIdx === 0) {
+                imageObj = this.imageList[this.imageList.length-1];
+            } else {
+                imageObj = this.imageList[imageIdx-1];
+            }
+        }
+
+        this.showImage(imageObj);
     }
 }

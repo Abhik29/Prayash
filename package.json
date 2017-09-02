@@ -11,7 +11,8 @@
     "webpack:dev:serve": "webpack-dev-server --content-base src/dist/",
     "build": "webpack --config ./webpack.config.js --progress",
     "build-aot": "node_modules/.bin/ngc -p src/webApp/tsconfig-aot.json",
-    "heroku-postbuild": "npm run build-aot && npm run build"
+    "heroku-postbuild": "npm run build-aot && npm run build",
+    "dev":"npm run heroku-postbuild"
   },
   "author": "abhik_dey29@yahoo.in",
   "license": "ISC",

@@ -12,7 +12,7 @@ module.exports = webpackMerge(commonConfig, {
   cache:false,
   output: {
     path: helpers.root('src','dist'),
-    publicPath: './',
+    publicPath: '/',
     filename: '[name].js',
     chunkFilename: '[id].chunk.js'
   },
@@ -24,6 +24,7 @@ module.exports = webpackMerge(commonConfig, {
   
   devServer: {
     historyApiFallback: true,
+    //hot: true
     stats: 'minimal'
   }
 });

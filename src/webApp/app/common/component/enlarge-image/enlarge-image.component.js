@@ -12,17 +12,47 @@ var EnlargeImageComponent = (function () {
     function EnlargeImageComponent() {
     }
     EnlargeImageComponent.prototype.close = function () {
-        this.file = '';
+        this.fileEven = '';
+        this.fileOdd = '';
         this.imageObj = {};
     };
     EnlargeImageComponent.prototype.showImage = function (imageObj) {
-        this.file = imageObj.file;
         this.imageObj = imageObj;
+        if (this.imageList.indexOf(imageObj) % 2 === 0) {
+            this.fileEven = imageObj.file;
+        }
+        else {
+            this.fileOdd = imageObj.file;
+        }
+    };
+    EnlargeImageComponent.prototype.changeImage = function (direction) {
+        var imageIdx = this.imageList.indexOf(this.imageObj), imageObj;
+        if (direction > 0) {
+            if ((imageIdx + 1) === this.imageList.length) {
+                imageObj = this.imageList[0];
+            }
+            else {
+                imageObj = this.imageList[imageIdx + 1];
+            }
+        }
+        else {
+            if (imageIdx === 0) {
+                imageObj = this.imageList[this.imageList.length - 1];
+            }
+            else {
+                imageObj = this.imageList[imageIdx - 1];
+            }
+        }
+        this.showImage(imageObj);
     };
     __decorate([
         Input(),
         __metadata("design:type", String)
     ], EnlargeImageComponent.prototype, "referenceUrl", void 0);
+    __decorate([
+        Input(),
+        __metadata("design:type", Array)
+    ], EnlargeImageComponent.prototype, "imageList", void 0);
     EnlargeImageComponent = __decorate([
         Component({
             selector: 'enlarge-image',
